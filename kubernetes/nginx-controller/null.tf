@@ -25,7 +25,7 @@ locals {
   instances = {
     namea = "sock-shop.${var.domain_name}"
     nameb = "grafana.${var.domain_name}"
-  }
+  } 
 }
 
 resource "aws_route53_record" "C-record" {
