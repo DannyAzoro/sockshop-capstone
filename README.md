@@ -29,9 +29,9 @@ Jenkins, an automation tool to build, test and deploy software is the Continuous
 1. Create an ec2 in AWS with a VPC having an inbound (Ingress) rule allowing All traffic, Port 22, Port 443 and Port 80 while also having an Outbound (Egress) rule allowing All traffic on ipv4 and ipv6.
 
 2. Clone the repository from github basically to run the istaller.sh with its dependences using the following command (./installer.sh)
-![clone the repo](/updated-sock-shop/capstone-images/capstone%201.png)
+![clone the repo](/capstone-images/capstone%201.png)
 
-![run./installer.sh](/updated-sock-shop/capstone-images/capstone%202.png)
+![run./installer.sh](/capstone-images/capstone%202.png)
 
 3. Optional test on eks directory to find out if there is any error with the files by changing directory (cd) to the eks directory
 ```
@@ -41,8 +41,8 @@ $terraform apply --auto-approve
 $terraform destroy --auto-approve
 ```
 ![](/capstone-images/capstone%203.png)
-![](/updated-sock-shop/capstone-images/capstone%204.png)
-![](/updated-sock-shop/capstone-images/capstone%206.png)
+![](/capstone-images/capstone%204.png)
+![](/capstone-images/capstone%206.png)
 
 4. Copy the IP address of the ec2 instance on aws to the (xxx.xxx.xx.xx:8080) this will open the jenkins default page then click on 'install suggested pluggins' to get started.
 ![](/updated-sock-shop/capstone-images/jenkins%202.png)
