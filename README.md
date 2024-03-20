@@ -33,7 +33,7 @@ Jenkins, an automation tool to build, test and deploy software is the Continuous
 
 ![run./installer.sh](/capstone-images/capstone%202.png)
 
-3. Optional test on eks directory to find out if there is any error with the files by changing directory (cd) to the eks directory
+3. Optional test on eks directory to find out if there is any error with the files by changing directory (cd) to the eks directory and running the following commands
 ```
 $cd eks
 $terraform init
