@@ -40,7 +40,7 @@ $terraform init
 $terraform apply --auto-approve
 $terraform destroy --auto-approve
 ```
-![](/updated-sock-shop/capstone-images/capstone%203.png)
+![](/capstone-images/capstone%203.png)
 ![](/updated-sock-shop/capstone-images/capstone%204.png)
 ![](/updated-sock-shop/capstone-images/capstone%206.png)
 
