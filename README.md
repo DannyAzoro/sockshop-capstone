@@ -26,9 +26,9 @@ Jenkins, an automation tool to build, test and deploy software is the Continuous
 
 
 # Visualizing the project - Steps from start to finish with pictures
-1. Create an ec2 in AWS with a VPC having an inbound (Ingress) rule allowing All traffic, Port 22, Port 443 and Port 80 while also having an Outbound (Egress) rule allowing All traffic on ipv4 and ipv6.
+1. Create an ec2 instance on AWS with a VPC having an inbound (Ingress) rule allowing All traffic, Port 22, Port 443 and Port 80 while also having an Outbound (Egress) rule allowing All traffic on ipv4 and ipv6.
 
-2. Clone the repository from github basically to run the istaller.sh with its dependences using the following command (./installer.sh)
+2. Clone the repository from github basically to run the istaller.sh with its dependencies using the following command (./installer.sh)
 ![clone the repo](/capstone-images/capstone%201.png)
 
 ![run./installer.sh](/capstone-images/capstone%202.png)
@@ -45,32 +45,32 @@ $terraform destroy --auto-approve
 ![](/capstone-images/capstone%206.png)
 
 4. Copy the IP address of the ec2 instance on aws to the (xxx.xxx.xx.xx:8080) this will open the jenkins default page then click on 'install suggested pluggins' to get started.
-![](/updated-sock-shop/capstone-images/jenkins%202.png)
-![](/updated-sock-shop/capstone-images/jenkins%203.png)
+![](/capstone-images/jenkins%202.png)
+![](/capstone-images/jenkins%203.png)
 
 5. Setup the environment and link jenkins with github and set the file path to both the jenkinsfile and cluster-jenkinsfile.
-![](/updated-sock-shop/capstone-images/jenkins%204.png)
-![](/updated-sock-shop/capstone-images/jenkins%20pipeline%20setup.png)
+![](/capstone-images/jenkins%204.png)
+![](/capstone-images/jenkins%20pipeline%20setup.png)
 
 6. Pipeline failure then success after a commit
-![](/updated-sock-shop/capstone-images/jenkins%20pipeline%20failure%20then%20success%20after%20a%20commit%20was%20made.png)
+![](/capstone-images/jenkins%20pipeline%20failure%20then%20success%20after%20a%20commit%20was%20made.png)
 
 7. This is the automated deployment of sockshop using the jenkinsfile and the deployment of the eks cluster using cluster-jenkinsfile.
-![](/updated-sock-shop/capstone-images/jenkins%20pipeline%20running.png)
+![](/capstone-images/jenkins%20pipeline%20running.png)
 
 8. Asides the resources created on AWS (mentioned above), Sockshop applications and grafana would be created on route53 and also nameservers that would copied and pointed to a domain name. In this case, my domain name - azorod.com.ng, as shown below
 
-![](/updated-sock-shop/capstone-images/nameservers%20update.png)
+![](/capstone-images/nameservers%20update.png)
 
 9. A secure certificate was created on AWS certificate manager. After it is issued, the sock-shop and grafana URL pointing to your domain name can be inputed in the browser. this will open the sock-shop page. Copying the grafana URL will also open the grafana dashboard which visually monitors the microservice-base applications. In as much as a secured certificate on AWS was issued both the sock-shop application and grafana dashboard were not secured on the browser.
 
-![](/updated-sock-shop/capstone-images/aws%20cert%20ready.png)
+![](/capstone-images/aws%20cert%20ready.png)
 
 10. Sock sock reflecting my domain name (azorod.com.ng)
 
-![](/updated-sock-shop/capstone-images/sock-shop.png)
+![](/capstone-images/sock-shop.png)
 
 11. Grafana reflecting my domain name (azorod.com.ng)
 
-![](/updated-sock-shop/capstone-images/grafana%201.png)
+![](/capstone-images/grafana%201.png)
 ![](/updated-sock-shop/capstone-images/grafana%202.png)
