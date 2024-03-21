@@ -4,7 +4,7 @@ The sock shop application shown is the part where users see. This is an online s
 # Objective
 The goal is to use a more novel approach to deploy the sock shop to ensure automation and efficiency. This novel approach involves using Infrastructure as a code (Iaac) to ensure a secure deployment on kubernetes to produce a quick, reproducible, efficient deployment process.
 # Resources
-The sock shop Microservices Demo is gotten from a GitHub repository at https://github.com/microservices-demo/microservices-
+The sock shop Microservices Demo is gotten from a GitHub repository at https://github.com/microservices-demo/microservices-demo.github.io 
 # Requirements and Tools used for the Project
 This project is configured in a Linux environment. A shell script - installer.sh contains the necessary commands to install and initialize all dependencies required for a successful execution of the project. This script includes terraform, unzip, kubectl, aws cli, helm and Jenkins. 
 The unzip command extracts an archived file in Linux. Terraform run our Terraform configurations. Kubectl run Kubernetes commands. The aws cli sets up the AWS environment. Helm manages Kubernetes applications and Jenkins - the Continuous Integration Continuous Deployment (CI/CD) tool used in this project, is the open source automation server used to reliably build, test and deploy the software.
@@ -28,7 +28,7 @@ Jenkins, an automation tool to build, test and deploy software is the Continuous
 # Visualizing the project - Steps from start to finish with pictures
 1. Create an ec2 instance on AWS with a VPC having an inbound (Ingress) rule allowing All traffic, Port 22, Port 443 and Port 80 while also having an Outbound (Egress) rule allowing All traffic on ipv4 and ipv6.
 
-2. Clone the repository from github basically to run the istaller.sh with its dependencies using the following command (./installer.sh)
+2. Clone the repository from github to run the istaller.sh with its dependencies using the following command - ./installer.sh
 ![clone the repo](/capstone-images/capstone%201.png)
 
 ![run./installer.sh](/capstone-images/capstone%202.png)
