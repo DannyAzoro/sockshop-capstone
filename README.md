@@ -73,4 +73,4 @@ $terraform destroy --auto-approve
 11. Grafana reflecting my domain name (azorod.com.ng)
 
 ![](/capstone-images/grafana%201.png)
-![](/updated-sock-shop/capstone-images/grafana%202.png)
+![](/capstone-images/grafana%202.png)
