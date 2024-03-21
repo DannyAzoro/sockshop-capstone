@@ -25,7 +25,7 @@ This folder houses four sub-folders namely micro-service, prometheus-helm, ingre
 Jenkins, an automation tool to build, test and deploy software is the Continuous Integration Continous Delivery (CI/CD) platform used.  Two Jenkins files were used in this project - the "cluster-Jenkinsfile", used to deploy the creation of our Kubernetes cluster. This cluster-Jenkinsfile also sets our environments by configuring our AWS credentials to enable Jenkins communicate with AWS. Parameters were also set to be able to create and destroy the cluster with just a click when you select to build with parameters. The second Jenkinsfile - "Jenkinsfile" also sets the environment by configuring the AWS credentials. It has four "create" stages to automate the deployment of the four sub-folders under the "kubernetes" folder. Four stages of "destroy" have also been set to enable the infrastructure to be easily destroyed with just a click.
 
 
-# Visualizing the project - Steps from start to finish with pictures
+# Visualizing the project - Steps with pictures
 1. Create an ec2 instance on AWS with a VPC having an inbound (Ingress) rule allowing All traffic, Port 22, Port 443 and Port 80 while also having an Outbound (Egress) rule allowing All traffic on ipv4 and ipv6.
 
 2. Clone the repository from github to run the istaller.sh with its dependencies using the following command - ./installer.sh
