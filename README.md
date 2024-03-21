@@ -1,5 +1,5 @@
-# Sock Shop : A Microservice Demo Application
-The sock shop application shown is the part where users see. This is an online shop that sells socks. The intention of this deployment is to aid the display and testing of microservice and cloud technologies. 
+# Sock shop (Seployment of a Microservice-based Application)
+The sock shop application shown is the part where users see. This is an online shop that sells socks. The intention of this deployment is to aid the display and testing of microservices and cloud technologies. 
 
 # Objective
 The goal is to use a more novel approach to deploy the sock shop to ensure automation and efficiency. This novel approach involves using Infrastructure as a code (Iaac) to ensure a secure deployment on kubernetes to produce a quick, reproducible, efficient deployment process.
@@ -10,7 +10,7 @@ This project is configured in a Linux environment. A shell script - installer.sh
 The unzip command extracts an archived file in Linux. Terraform run our Terraform configurations. Kubectl run Kubernetes commands. The aws cli sets up the AWS environment. Helm manages Kubernetes applications and Jenkins - the Continuous Integration Continuous Deployment (CI/CD) tool used in this project, is the open source automation server used to reliably build, test and deploy the software.
 
 # The Repository
-capstone-project is the name of the repository, and it is available in the master branch of the GitHub repository https://github.com/DannyAzoro/sockshop-capstone. It contains three major folders namely eks, kubernetes, and capstone-images, and four files namely installer.sh, cluster-Jenkinsfile, Jenkinsfile, and README.md.
+sockshop-capstone is the name of the repository, and it is available in the master branch of the GitHub repository https://github.com/DannyAzoro/sockshop-capstone. It contains three major folders namely eks, kubernetes, and capstone-images, and four files namely installer.sh, cluster-Jenkinsfile, Jenkinsfile, and README.md.
 
 # The Folders
 ### The eks Folder
@@ -58,7 +58,7 @@ $terraform destroy --auto-approve
 7. This is the automated deployment of sockshop using the jenkinsfile and the deployment of the eks cluster using cluster-jenkinsfile.
 ![](/capstone-images/jenkins%20pipeline%20running.png)
 
-8. Asides the resources created on AWS (mentioned above), Sockshop applications and grafana would be created on route53 and also nameservers that would copied and pointed to a domain name. In this case, my domain name - azorod.com.ng, as shown below
+8. Asides the resources created on AWS (mentioned above), Sockshop applications and grafana would be created on route53 and also nameservers that would be copied and pointed to a domain name. In this case, my domain name - azorod.com.ng, as shown below
 
 ![](/capstone-images/nameservers%20update.png)
 
