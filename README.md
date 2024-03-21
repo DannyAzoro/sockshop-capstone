@@ -1,4 +1,4 @@
-# Sock shop (Seployment of a Microservice-based Application)
+# Sock shop (Deployment of a Microservice-based Application)
 The sock shop application shown is the part where users see. This is an online shop that sells socks. The intention of this deployment is to aid the display and testing of microservices and cloud technologies. 
 
 # Objective
